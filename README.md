@@ -1,0 +1,5 @@
+- The main function initialized an array of 10 accounts, each with the password 12345 and account number 1 - 10, each with starting balance of 5000
+- While the user could input numbers with more than two places after the decimal, the calculation would round the result to two places after the decimal
+- Non-numeric/invalid inputted to withdraw or deposit would not be procedded, but cases like 100.10. or 0123 would be accepted as the valid part of the string could be converted to number.
+- While the spec did not specify, I added a quit option to go back to the login window. To leave the login window, the key-interrupt is needed. This is similar to an actual ATM since the login screen does not disappear
+- Compile using g++ Main.cpp Account.cpp Transaction.cpp or use the compiled program a.out. Used libraries: string, cstdio, cctype, vector, ctime.
